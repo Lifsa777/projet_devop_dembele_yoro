@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "devDependencies": {
+    "@eslint/js": "^9.36.0",
     "eslint": "^9.36.0",
+    "globals": "^16.4.0",
     "jest": "^30.2.0"
   },
   "scripts": {
