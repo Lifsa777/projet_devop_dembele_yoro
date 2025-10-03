@@ -1,3 +1,5 @@
+# .github/workflows/merge.yml (Version nettoyée)
+
 name: Auto Merge PR
 
 on:
@@ -18,7 +20,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-            merge-method: squash
-            commit-message: title+body
-            title: 'Merge automatique de la PR'
-            body: 'Cette PR a été fusionnée automatiquement.'
+          merge-method: squash
+          commit-message: title+body
+          title: 'Merge automatique de la PR'
+          # La ligne body doit être la dernière du bloc with:
+          body: 'Cette PR a été fusionnée automatiquement.'
